@@ -29,7 +29,7 @@ steps:
   displayName: 'Run services'
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'aks-01'
+    azureSubscription: 'ARM'
     azureContainerRegistry: 'acrvmaks.azurecr.io'
     dockerComposeFile: 'docker-compose.ci.build.yml'
     action: 'Run services'
