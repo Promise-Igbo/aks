@@ -62,7 +62,7 @@ steps:
   inputs:
     containerregistrytype: 'Azure Container Registry'
     azureSubscription: 'acraks-02'
-    azureContainerRegistry: 'dockerreg0912.azurecr.io'
+    azureContainerRegistry: 'acrvmaks.azurecr.io'
     dockerComposeFile: 'docker-compose.yml'
     dockerComposeFileArgs: 'DOCKER_BUILD_SOURCE='
     action: 'Lock services'
