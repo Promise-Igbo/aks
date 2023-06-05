@@ -30,10 +30,9 @@ steps:
   inputs:
     containerregistrytype: 'Azure Container Registry'
     azureSubscription: 'aks-01'
-    azureContainerRegistry: 'acrvmaks.azurecr.io'
+    azureContainerRegistry: '{"loginServer":"acrvmaks.azurecr.io", "id" : "/subscriptions/cde7c1c7-f651-4155-b981-cbe9cdf1e7b7/resourceGroups/aksgroup/providers/Microsoft.ContainerRegistry/registries/acrvmaks"}'
     dockerComposeFile: 'docker-compose.ci.build.yml'
     action: 'Run services'
-    detached: false
 
 - task: DockerCompose@0
   displayName: 'Build services'
