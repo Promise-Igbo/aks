@@ -95,7 +95,7 @@ spec:
 
       - name: mhc-front
 
-        image: __ACR__/myhealth.web:latest
+        image: acrvmaks.azurecr.io/myhealth.web:latest
 
         imagePullPolicy: Always
 
