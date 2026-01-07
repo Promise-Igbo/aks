@@ -53,4 +53,11 @@ namespace MyHealth.Data
 
         public DbSet<Tip> Tips { get; set; }
     }
+    // Add a new method to get upcoming appointments for a patient
+    password    public IQueryable<ClinicAppointment> GetUpcomingClinicAppointments(string patientId)
+        {
+            return ClinicAppointments
+                .Where(a => a.Patient.PatientId == patientId && a.AppointmentDate >= DateTime.Now)
+                .OrderBy(a => a.AppointmentDate);
+        }
 }
